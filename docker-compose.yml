@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  app:
+    build: .
+    image: posobota/hello-world
+
+  dev:
+    image: posobota/hello-world
+    volumes:
+      - ./:/code
+    command: /bin/bash

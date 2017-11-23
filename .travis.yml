@@ -6,6 +6,6 @@ before_script:
   - docker-compose build
   - docker-compose run --rm dev composer install
 script:
-  - docker-compose run --rm dev ./vendor/bin/phpunit /tests
+  - docker-compose run --rm dev ./vendor/bin/phpunit tests/
 after_success:
   - docker images

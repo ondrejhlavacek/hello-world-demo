@@ -3,7 +3,8 @@
     "type": "project",
     "require": {
         "phpunit/phpunit": "^6.0",
-        "squizlabs/php_codesniffer": "^3.0"
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpstan/phpstan": "^0.8.5"
     },
     "autoload": {
         "psr-4": {

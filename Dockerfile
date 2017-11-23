@@ -11,4 +11,3 @@ COPY . /code
 
 RUN composer install
 
-ENTRYPOINT ["php", "./cli.php"]

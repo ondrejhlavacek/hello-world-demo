@@ -1,0 +1,11 @@
+sudo: required
+language: bash
+services:
+  - docker
+before_script:
+  - docker-compose build
+  - docker-compose run --rm dev composer install
+script:
+  - docker-compose run --rm dev phpunit /tests
+after_success:
+  - docker images

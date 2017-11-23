@@ -13,6 +13,7 @@
             <directory suffix=".php">.</directory>
             <exclude>
                 <directory suffix=".php">vendor</directory>
+                <file>cli.php</file>
             </exclude>
         </whitelist>
     </filter>

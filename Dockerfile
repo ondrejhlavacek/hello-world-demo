@@ -10,4 +10,3 @@ RUN curl -sS https://getcomposer.org/installer | php \
 COPY . /code
 
 RUN composer install
-

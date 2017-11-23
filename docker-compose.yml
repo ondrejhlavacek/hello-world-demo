@@ -4,7 +4,6 @@ services:
   app:
     build: .
     image: posobota/hello-world
-    entrypoint: php ./cli.php
 
   dev:
     image: posobota/hello-world

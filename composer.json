@@ -1,5 +1,7 @@
 {
     "name": "posobota/hello-world",
     "type": "project",
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^6.0"
+    }
 }

@@ -3,5 +3,11 @@
     "type": "project",
     "require": {
         "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PosledniSobota\\": "src/",
+            "PosledniSobota\\Tests\\": "tests/"
+        }
     }
 }

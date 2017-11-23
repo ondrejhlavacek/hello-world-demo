@@ -9,7 +9,7 @@ services:
     image: posobota/hello-world
     volumes:
       - ./:/code
-    command: /bin/bash
+    entrypoint: sh -c
 
   xdebug:
     image: posobota/hello-world-xdebug
@@ -20,3 +20,4 @@ services:
       - ./:/code
     environment:
       - CODECLIMATE_REPO_TOKEN
+    entrypoint: sh -c

@@ -11,4 +11,5 @@ script:
   - docker-compose run --rm dev vendor/bin/phpunit
 after_success:
   - docker-compose run --rm xdebug vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+  - docker-compose run --rm xdebug vendor/bin/test-reporter
   - docker images

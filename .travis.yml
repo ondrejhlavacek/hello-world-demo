@@ -8,6 +8,7 @@ before_script:
   - docker-compose run --rm dev vendor/bin/phpcs --standard=psr2 -n --ignore=vendor --extensions=php .
   - docker-compose run --rm dev vendor/bin/phpstan analyse --level=7 ./src ./tests
 script:
-  - docker-compose run --rm dev ./vendor/bin/phpunit tests/
+  - docker-compose run --rm dev vendor/bin/phpunit
 after_success:
+  - docker-compose run --rm xdebug vendor/bin/phpunit --coverage-clover build/logs/clover.xml
   - docker images
